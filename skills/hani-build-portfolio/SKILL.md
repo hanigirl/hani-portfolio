@@ -76,6 +76,73 @@ does, what to verify after it, and how to resolve the places where two skills
 give contradictory advice. They will contradict each other; that is expected
 and the reference says who wins.
 
+## Use these four and nothing else
+
+While this workflow is running, do not reach for any other design skill, even
+when one looks relevant and even when its description matches the task.
+
+Most machines have several installed: general UI advisors, style-specific
+skills for minimalism or brutalism, visual-design and dashboard skills,
+component-library helpers. Each carries its own aesthetic and its own idea of
+what good looks like. Pulled in halfway through, they do not add a viewpoint,
+they dilute one. The result is a page that is arguing with itself, which reads
+to a viewer as exactly the genericness this workflow exists to avoid. A
+portfolio needs one point of view held all the way through, and the four
+passes here already disagree with each other enough (see
+[references/passes.md](references/passes.md)) without inviting a fifth voice.
+
+The exceptions are skills that supply facts rather than taste: framework
+documentation, an icon or animation API reference, an accessibility checker.
+Those inform the work without competing for authorship of it.
+
+If the person explicitly asks for another skill, use it. They own the result.
+
+## Composition: boulders, rocks and pebbles
+
+Emotion in a layout comes from contrast in scale, not from decoration. The
+reliable structure is one boulder, a few rocks, many pebbles.
+
+- **One boulder per view.** A single dominant element that owns the screen: the
+  headline, the hero image, the one product shot. Only one. Two boulders is
+  two things competing, and the viewer resolves that by caring about neither.
+- **A few rocks.** Supporting elements at a clearly smaller scale. The
+  standfirst, the primary action, a section's key image. They are read second,
+  and they must look second.
+- **Many pebbles.** Metadata, captions, labels, the follow line. Small and
+  quiet enough that they recede until someone goes looking for them.
+
+Apple's product pages are the clearest reference: an enormous product image, a
+short line of type beneath it, and everything else deliberately tiny. The
+feeling comes from the *gap* between those sizes. Steps that are too close
+together read as indecision and flatten the page, which is the most common way
+a competent layout ends up feeling like nothing.
+
+Apply it per view, not per page. Each screenful a visitor stops on wants its
+own boulder. A long page is a sequence of these, not one giant element followed
+by uniform filler.
+
+This also settles sizing arguments. If two elements are different sizes, that
+difference is a claim about importance, so be able to say what the claim is.
+Varying sizes for visual interest alone reads as a mistake rather than as
+composition.
+
+## Do not label sections
+
+No kickers, eyebrows or small caps labels above headings unless the person
+asks for them. "SELECTED WORK" above the work, "ABOUT" above the about text,
+"POINT OF VIEW" above a statement.
+
+They feel like structure but they are almost always redundant: the heading
+already says what the section is, and the section's position on the page
+already says it too. Worse, they are the single strongest visual signature of
+a generated page, because every generated layout puts one above every section,
+producing an identical rhythm that a viewer recognises instantly without being
+able to name why.
+
+Delete the label and let the heading carry its own weight. If a section truly
+cannot be understood without one, that is usually a sign the heading is wrong,
+not that a label is missing.
+
 ## Before you write any frontend code
 
 Read [references/pitfalls.md](references/pitfalls.md). It is short, and every
