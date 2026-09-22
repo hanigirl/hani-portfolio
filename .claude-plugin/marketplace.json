@@ -1,0 +1,13 @@
+{
+  "name": "hani-build-portfolio",
+  "owner": {
+    "name": "Hani",
+    "url": "https://github.com/hani"
+  },
+  "plugins": [
+    {
+      "source": "./plugins/hani-build-portfolio",
+      "category": "design"
+    }
+  ]
+}

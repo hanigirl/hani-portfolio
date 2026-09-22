@@ -1,0 +1,16 @@
+{
+  "name": "hani-build-portfolio",
+  "version": "0.1.0",
+  "description": "Builds a designer's portfolio site by running four design skills in sequence: direction, motion, audit, then case studies. Carries the frontend failure modes that break portfolio builds.",
+  "author": {
+    "name": "Hani"
+  },
+  "keywords": [
+    "portfolio",
+    "design",
+    "case-study",
+    "motion",
+    "frontend"
+  ],
+  "license": "MIT"
+}
