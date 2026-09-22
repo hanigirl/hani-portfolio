@@ -45,7 +45,8 @@ than just listing a missing name:
   generated-UI signatures. Judgement cannot substitute for it: on a real build
   it flagged the typeface that the direction pass had just recommended.
 - **Cases** carries case-study structure, so the writing serves a reader
-  deciding whether to interview rather than narrating a project.
+  deciding whether to interview rather than narrating a project. It supplies
+  the container only; the facts come from the intake.
 
 These are referenced, never copied, so people stay on the authors' current
 versions. `impeccable` in particular ships a versioned binary engine that
@@ -68,8 +69,11 @@ question, and asking them at once produces mush.
    of the built thing.
 4. **Audit** via `impeccable`. Its detector finds what you stopped seeing an
    hour ago: contrast, convergent fonts, generated-UI signatures.
-5. **Cases** via `designer-toolkit:case-study`. The writing, last, once the
-   frames exist to write into.
+5. **Cases** via `case-study`. The writing, last, once the frames exist to
+   write into. Run the intake in
+   [references/passes.md](references/passes.md) first: that skill supplies a
+   structure but never asks where the facts come from, so without it the
+   role, timeline and metrics get invented.
 
 Read [references/passes.md](references/passes.md) for what each pass actually
 does, what to verify after it, and how to resolve the places where two skills

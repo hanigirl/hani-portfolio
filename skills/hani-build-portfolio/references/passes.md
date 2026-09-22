@@ -50,14 +50,52 @@ proposing an intention.
 Note it is a *reporting* command by design. Apply the fixes in one batch, then
 confirm with at most one more round. Open-ended self-QA burns money.
 
-## 4. Cases — `designer-toolkit:case-study`
+## 4. Cases — `case-study`
 
 Last, deliberately. Writing case studies before the frames exist produces copy
 that the layout then has to accommodate.
 
-Watch for the mismatch nobody flags: real screenshots dropped into placeholder
-project slots leave the imagery and the written story describing different
-products. Check every pairing and say so plainly when one is wrong.
+The skill supplies the container and nothing else: a six-part outline and
+writing rules. It never asks where the facts come from, and it actively pushes
+toward numbers ("quantify impact wherever possible", "lead with the most
+impressive outcome"). Left alone with an outline that has empty slots, a model
+fills them. So run the intake below first, per project.
+
+### Intake, before writing a word
+
+Ask these for each case study, and accept "I do not have that" as a complete
+answer:
+
+1. Project and client, or "confidential" if it is under NDA
+2. Your exact role, and who else was on it. Hiring managers read this closely,
+   and "I designed it" on a team of six reads as either vague or dishonest
+3. When, and roughly how long
+4. The problem in one sentence, as the business saw it and as users
+   experienced it. Those are usually two different sentences, and having both
+   is what makes a case read as senior
+5. The outcome. A number if one exists, a qualitative result if not
+6. The one thing they would do differently
+
+### Never invent a metric
+
+This is the rule that matters most, because inventing is the path of least
+resistance when a section looks empty.
+
+A fabricated conversion rate is not a placeholder, it is a claim the person
+will be asked to defend in an interview, by someone who reads these all day
+and asks follow-up questions. Getting caught inventing an outcome costs the
+job; an honest gap costs nothing.
+
+So when there is no number, write the qualitative result instead, or leave the
+slot visibly empty and tell the person it needs filling. Never round a real
+number up, never estimate one from context, and never carry a number from a
+placeholder into real copy.
+
+### Check the pairing
+
+A mismatch nobody flags: real screenshots dropped into placeholder project
+slots leave the imagery and the written story describing different products.
+Check every pairing and say so plainly when one is wrong.
 
 ## When two skills disagree
 
