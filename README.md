@@ -62,7 +62,7 @@ The four skills are other people's work. What this adds:
   ([skills](https://github.com/emilkowalski/skills), MIT)
 - `case-study` — Marie Claire Dean
   ([designer-skills](https://github.com/Owl-Listener/designer-skills), MIT)
-- `impeccable` — Paul Bakaus
+- `impeccable` — Paul Bakaus ([impeccable.style](https://impeccable.style/))
 
 ## Licence
 
