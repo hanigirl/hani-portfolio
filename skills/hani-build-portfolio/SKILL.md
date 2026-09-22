@@ -63,13 +63,15 @@ question, and asking them at once produces mush.
 
 1. **Brief.** Four decisions, before any code. Read
    [references/brief.md](references/brief.md).
-2. **Direction** via `design-taste-frontend`. Establishes the visual world and
+2. **Concept, then assets.** Agree the one idea the site hangs on, and get the
+   images in hand. Both sections below.
+3. **Direction** via `design-taste-frontend`. Establishes the visual world and
    builds it. Audit-first when a site already exists.
-3. **Motion** via `emil-design-eng`. Timing, easing and interaction feel on top
+4. **Motion** via `emil-design-eng`. Timing, easing and interaction feel on top
    of the built thing.
-4. **Audit** via `impeccable`. Its detector finds what you stopped seeing an
+5. **Audit** via `impeccable`. Its detector finds what you stopped seeing an
    hour ago: contrast, convergent fonts, generated-UI signatures.
-5. **Cases** via `case-study`. The writing, last, once the frames exist to
+6. **Cases** via `case-study`. The writing, last, once the frames exist to
    write into. Run the intake in
    [references/passes.md](references/passes.md) first: that skill supplies a
    structure but never asks where the facts come from, so without it the
@@ -79,6 +81,70 @@ Read [references/passes.md](references/passes.md) for what each pass actually
 does, what to verify after it, and how to resolve the places where two skills
 give contradictory advice. They will contradict each other; that is expected
 and the reference says who wins.
+
+## Agree a concept before building anything
+
+Ask for the one idea the whole site hangs on, and do not start until there is
+one. A concept is not a style word like "minimal" or "bold": those describe a
+surface and constrain nothing. It is a thing the site *is*, which then decides
+questions before you have to argue about them.
+
+Worked examples: the site as deep space with the person's craft flying through
+it. As a printed archive. As an operating system. As a field notebook. Each of
+those answers what the background does, how sections transition, what the
+imagery is of, and what the motion means, without any of those being decided
+separately.
+
+Two tests before accepting one:
+
+- Can the person say it in a single sentence, in their own words?
+- Does it decide at least three things that would otherwise be arbitrary?
+
+If it fails either, it is a mood, not a concept, and the site will drift back
+to a template as soon as a hard layout question comes up.
+
+The concept has to come from them. Offer two or three options drawn from what
+they have told you about their work, and let them pick or reject all of them.
+A concept you imposed produces a site they cannot explain in an interview,
+which is the one thing a portfolio must survive.
+
+## Ask for the images before building, not after
+
+Once the concept is agreed, the assets it implies become obvious. Ask for all
+of them up front, because a layout built around placeholders and then fitted
+with real images later fits badly.
+
+Ask for three kinds:
+
+- **A portrait of them.** Hiring managers look for a face. Say what it is for
+  and roughly what crop the layout wants.
+- **The visual language of the concept.** The recurring motif the site is built
+  from: the craft, the object, the texture, the world. This is what makes the
+  site theirs rather than a good template.
+- **Their work.** Real screenshots of real interfaces, not mockups.
+
+If they do not have the concept imagery, recommend they generate it with
+ChatGPT or another image model, and tell them what to ask for: the subject, on
+a transparent background, and several variations so the layout has choices.
+Most designers reach for this immediately once it is suggested, and it is
+usually faster than commissioning or hunting for stock.
+
+### Transparency has to be real
+
+The one thing to insist on, because it has wrecked whole afternoons: a
+"transparent" PNG from an image model is frequently a checkerboard *painted
+into the pixels* with no alpha channel at all. It looks transparent in a
+preview and is opaque in the browser.
+
+Check before building anything around it:
+
+    sips -g hasAlpha file.png
+
+If it says `no`, ask for a re-export rather than trying to key it out. A
+flattened sheet cannot be recovered cleanly when the subject shares values
+with the checker squares: any threshold that removes the background also eats
+the subject. Asking again takes a minute. Not asking costs hours and still
+ends in a worse cut-out.
 
 ## Use these four and nothing else
 
