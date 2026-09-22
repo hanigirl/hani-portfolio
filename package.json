@@ -5,6 +5,14 @@
   "author": "Hani",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanigirl/hani-portfolio.git"
+  },
+  "homepage": "https://github.com/hanigirl/hani-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/hanigirl/hani-portfolio/issues"
+  },
   "bin": {
     "hani-build-portfolio": "bin/cli.js"
   },
