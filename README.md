@@ -20,12 +20,16 @@ Then `/portfolio`, or just describe what you want built.
 
 ## Dependencies
 
+All four are **required**. The skill checks for them and refuses to start if
+any is missing, because each pass catches what the others structurally cannot
+see: a run missing one does not produce slightly worse work, it produces work
+with a specific blind spot.
+
 Referenced, never bundled, so you stay on the authors' current versions.
-The skill preflights these and tells you what is missing.
 
 | Pass | Skill | Install |
 | --- | --- | --- |
-| Direction | `design-taste-frontend` | ships outside the public marketplaces |
+| Direction | `design-taste-frontend` | `npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"` |
 | Motion | `emil-design-eng` | `npx skills add emilkowalski/skills` |
 | Audit | `impeccable` | `npx impeccable install` |
 | Cases | `designer-toolkit:case-study` | `/plugin marketplace add Owl-Listener/designer-skills` |
@@ -41,8 +45,9 @@ This plugin orchestrates work by other people and claims none of it.
   ([emilkowalski/skills](https://github.com/emilkowalski/skills), MIT)
 - `designer-toolkit` — Marie Claire Dean
   ([Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills), MIT)
-- `impeccable` — its respective authors
-- `design-taste-frontend` — its respective authors
+- `impeccable` — Paul Bakaus
+- `design-taste-frontend` — Leonxlnx
+  ([Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), MIT)
 
 What is original here is the sequencing, the brief, the conflict-resolution
 rules for when two skills disagree, and the failure modes in

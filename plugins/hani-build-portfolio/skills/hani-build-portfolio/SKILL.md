@@ -14,22 +14,46 @@ No single skill gets you there. Four do, in order, each fixing what the
 previous one cannot see. This skill runs that sequence and carries the
 failure modes that cost real hours when they are hit cold.
 
-## Preflight
+## Preflight: all four are required
 
-Check which dependencies are available before starting, and tell the person
-plainly what is missing rather than silently doing less. Each pass degrades
-to your own judgement if its skill is absent, which is worse but not fatal.
+Check every dependency before doing anything else. If any is missing, stop and
+print the install commands. Do not start a reduced version of the workflow.
 
-| Pass | Skill | Install if missing |
+That is a deliberate gate, not bureaucracy. Each pass exists to catch what the
+others structurally cannot see, so a run missing one does not produce slightly
+worse work, it produces work with a specific blind spot that nobody will
+notice until it is in front of a hiring manager. Running three of four and
+calling it done is the failure this skill exists to prevent.
+
+| Pass | Skill | Install |
 | --- | --- | --- |
-| Direction | `design-taste-frontend` | Ask the person for their source; it ships outside the public marketplaces |
-| Motion | `emil-design-eng` | `npx skills add emilkowalski/skills` (MIT) |
+| Direction | `design-taste-frontend` | `npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"` |
+| Motion | `emil-design-eng` | `npx skills add emilkowalski/skills` |
 | Audit | `impeccable` | `npx impeccable install`, then `/impeccable init` |
-| Cases | `designer-toolkit:case-study` | `/plugin marketplace add Owl-Listener/designer-skills` then `/plugin install designer-toolkit` (MIT) |
+| Cases | `designer-toolkit:case-study` | `/plugin marketplace add Owl-Listener/designer-skills` then `/plugin install designer-toolkit` |
 
-These are referenced, never copied. `impeccable` in particular ships a
-versioned binary engine that self-updates; a vendored copy strands people on a
-stale one.
+What each one is the only source of, so you can say what is at stake rather
+than just listing a missing name:
+
+- **Direction** carries the anti-default list. Without it the result is
+  competent and templated, which is the exact outcome a portfolio cannot
+  afford.
+- **Motion** carries the timing numbers. Without it durations get guessed, and
+  guessed durations read as lag.
+- **Audit** is the only pass that *measures*. It runs a detector against the
+  live page and returns contrast ratios, convergent typefaces and
+  generated-UI signatures. Judgement cannot substitute for it: on a real build
+  it flagged the typeface that the direction pass had just recommended.
+- **Cases** carries case-study structure, so the writing serves a reader
+  deciding whether to interview rather than narrating a project.
+
+These are referenced, never copied, so people stay on the authors' current
+versions. `impeccable` in particular ships a versioned binary engine that
+self-updates; a vendored copy strands users on a stale one.
+
+If someone insists on proceeding without one, that is their call to make and
+you should respect it. Name the specific blind spot they are accepting, then
+continue.
 
 ## The sequence
 
