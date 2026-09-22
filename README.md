@@ -7,52 +7,60 @@ builds.
 A portfolio is the one site where the design is itself the work sample, so it
 has to survive someone who looks at portfolios all day. No single skill gets
 there: direction, motion, audit and writing are four different questions, and
-asking them at once produces work that is vaguely good at all four.
+asking them at once produces work that is vaguely good at all four and sharp
+at none.
 
 ## Install
 
 ```
-/plugin marketplace add <your-github-user>/hani-build-portfolio
-/plugin install hani-build-portfolio
+npx hani-build-portfolio install
 ```
 
-Then `/portfolio`, or just describe what you want built.
+That installs the orchestrator and all four skills it sequences. Then run
+`/impeccable init` and ask for a portfolio.
 
-## Dependencies
+## What gets installed
 
-All four are **required**. The skill checks for them and refuses to start if
-any is missing, because each pass catches what the others structurally cannot
-see: a run missing one does not produce slightly worse work, it produces work
-with a specific blind spot.
+All four passes are required, and the skill refuses to start without them.
+That is deliberate: each pass catches what the others structurally cannot
+see, so a run missing one does not produce slightly worse work, it produces
+work with a specific blind spot.
 
-Referenced, never bundled, so you stay on the authors' current versions.
-
-| Pass | Skill | Install |
+| Pass | Skill | Source |
 | --- | --- | --- |
-| Direction | `design-taste-frontend` | `npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"` |
-| Motion | `emil-design-eng` | `npx skills add emilkowalski/skills` |
+| Direction | `design-taste-frontend` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) |
+| Motion | `emil-design-eng` | [emilkowalski/skills](https://github.com/emilkowalski/skills) |
 | Audit | `impeccable` | `npx impeccable install` |
-| Cases | `designer-toolkit:case-study` | `/plugin marketplace add Owl-Listener/designer-skills` |
+| Case studies | `case-study` | [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills) |
 
-`impeccable` in particular must not be vendored: it ships a versioned binary
-engine that self-updates, and a copied one strands users on a stale build.
+The installer fetches each from its author's own repository rather than
+bundling copies, so you stay on current versions and the authors keep their
+attribution. `impeccable` installs itself: it ships a platform-specific binary
+engine that it downloads and self-updates, which is why it could not be
+vendored even if the others were.
+
+## What is original here
+
+The four skills are other people's work. What this adds:
+
+- **The sequence**, and why the order matters
+- **The brief** — four questions asked before any code, because each one
+  changes work that is expensive to redo
+- **Conflict rules** for when two skills contradict each other, which they do
+- **`references/pitfalls.md`** — frontend failure modes that all shipped
+  looking correct and were found later by accident. Several are invisible in a
+  screenshot, which is exactly why they survive review
 
 ## Credits
 
-This plugin orchestrates work by other people and claims none of it.
-
-- `emil-design-eng` and the animation skills — Emil Kowalski
-  ([emilkowalski/skills](https://github.com/emilkowalski/skills), MIT)
-- `designer-toolkit` — Marie Claire Dean
-  ([Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills), MIT)
-- `impeccable` — Paul Bakaus
 - `design-taste-frontend` — Leonxlnx
-  ([Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), MIT)
-
-What is original here is the sequencing, the brief, the conflict-resolution
-rules for when two skills disagree, and the failure modes in
-`references/pitfalls.md`.
+  ([taste-skill](https://github.com/Leonxlnx/taste-skill), MIT)
+- `emil-design-eng` — Emil Kowalski
+  ([skills](https://github.com/emilkowalski/skills), MIT)
+- `case-study` — Marie Claire Dean
+  ([designer-skills](https://github.com/Owl-Listener/designer-skills), MIT)
+- `impeccable` — Paul Bakaus
 
 ## Licence
 
-MIT, for this plugin's own contents.
+MIT, for this package's own contents.

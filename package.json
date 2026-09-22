@@ -1,0 +1,11 @@
+{
+  "name": "hani-build-portfolio",
+  "version": "0.1.0",
+  "description": "One command to install a portfolio-building workflow for designers: an orchestrator skill plus the four design skills it sequences.",
+  "bin": { "hani-build-portfolio": "bin/cli.js" },
+  "files": ["bin", "skills", "README.md", "LICENSE"],
+  "keywords": ["claude", "claude-code", "skill", "portfolio", "design", "case-study"],
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=18" }
+}
