@@ -13,11 +13,14 @@ at none.
 ## Install
 
 ```
-npx hani-build-portfolio install
+npx github:hanigirl/hani-portfolio install
 ```
 
 That installs the orchestrator and all four skills it sequences. Then run
 `/impeccable init` and ask for a portfolio.
+
+Run it from the project you want the portfolio in: skills install into that
+project's `.claude/` directory, not globally.
 
 ## What gets installed
 
